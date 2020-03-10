@@ -11,49 +11,49 @@ cluster:
   gitKind: github
   gitName: github
   gitServer: https://github.com
-  namespace: jx
+  namespace: jxl
   provider: kubernetes
 environments:
 - ingress:
-    domain: ""
-    externalDNS: false
+    domain: "dev.jxl-vanilla.codetest.ninja"
+    externalDNS: true
     namespaceSubDomain: ""
     tls:
-      email: ""
-      enabled: false
-      production: false
+      email: "petr.kacer@blackboard.com"
+      enabled: true
+      production: true
   key: dev
   repository: environment-vanilla-kops-k8s-local-dev
 - ingress:
-    domain: ""
-    externalDNS: false
+    domain: "stg.jxl-vanilla.codetest.ninja"
+    externalDNS: true
     namespaceSubDomain: ""
     tls:
-      email: ""
-      enabled: false
-      production: false
+      email: "petr.kacer@blackboard.com"
+      enabled: true
+      production: true
   key: staging
   repository: environment-vanilla-kops-k8s-local-staging
 - ingress:
-    domain: ""
-    externalDNS: false
+    domain: "prod.jxl-vanilla.codetest.ninja"
+    externalDNS: true
     namespaceSubDomain: ""
     tls:
-      email: ""
-      enabled: false
-      production: false
+      email: "petr.kacer@blackboard.com"
+      enabled: true
+      production: true
   key: production
   repository: environment-vanilla-kops-k8s-local-production
 gitops: true
 helmfile: true
 ingress:
-  domain: ""
-  externalDNS: false
+  domain: "jxl-vanilla.codetest.ninja"
+  externalDNS: true
   namespaceSubDomain: -jx.
   tls:
-    email: ""
-    enabled: false
-    production: false
+    email: "petr.kacer@blackboard.com"
+    enabled: true
+    production: true
 kaniko: true
 repository: nexus
 secretStorage: local
