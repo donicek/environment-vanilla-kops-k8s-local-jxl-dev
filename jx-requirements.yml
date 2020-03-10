@@ -13,6 +13,8 @@ cluster:
   gitServer: https://github.com
   namespace: jxl
   provider: kubernetes
+  region: us-east-1
+  registry: 257597320193.dkr.ecr.us-east-1.amazonaws.com
 environments:
 - ingress:
     domain: "dev.jxl-vanilla.codetest.ninja"
