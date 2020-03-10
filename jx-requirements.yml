@@ -17,31 +17,31 @@ cluster:
   registry: 257597320193.dkr.ecr.us-east-1.amazonaws.com
 environments:
 - ingress:
-    domain: "dev.jxl-vanilla.codetest.ninja"
+    domain: jxl-vanilla.codetest.ninja
     externalDNS: true
-    namespaceSubDomain: ""
+    namespaceSubDomain: -jx.
     tls:
-      email: "petr.kacer@blackboard.com"
+      email: petr.kacer@blackboard.com
       enabled: true
       production: true
   key: dev
   repository: environment-vanilla-kops-k8s-local-dev
 - ingress:
-    domain: "stg.jxl-vanilla.codetest.ninja"
+    domain: stg.jxl-vanilla.codetest.ninja
     externalDNS: true
     namespaceSubDomain: ""
     tls:
-      email: "petr.kacer@blackboard.com"
+      email: petr.kacer@blackboard.com
       enabled: true
       production: true
   key: staging
   repository: environment-vanilla-kops-k8s-local-staging
 - ingress:
-    domain: "prod.jxl-vanilla.codetest.ninja"
+    domain: prod.jxl-vanilla.codetest.ninja
     externalDNS: true
     namespaceSubDomain: ""
     tls:
-      email: "petr.kacer@blackboard.com"
+      email: petr.kacer@blackboard.com
       enabled: true
       production: true
   key: production
@@ -49,11 +49,11 @@ environments:
 gitops: true
 helmfile: true
 ingress:
-  domain: "jxl-vanilla.codetest.ninja"
+  domain: jxl-vanilla.codetest.ninja
   externalDNS: true
   namespaceSubDomain: -jx.
   tls:
-    email: "petr.kacer@blackboard.com"
+    email: petr.kacer@blackboard.com
     enabled: true
     production: true
 kaniko: true
